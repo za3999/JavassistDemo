@@ -73,7 +73,7 @@ class Util {
     private static void addCode(CtClass ctClass, String body, String fileName, ClassPool pool) {
         ctClass.defrost()
         CtMethod method = ctClass.getDeclaredMethod("onClick", pool.get("android.view.View"))
-        method.insertAfter(body)
+        method.insertBefore(body)
 
         ctClass.writeFile(fileName)
         ctClass.detach()
