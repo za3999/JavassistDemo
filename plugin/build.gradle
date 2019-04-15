@@ -14,11 +14,6 @@ repositories {
     jcenter()
 }
 
-tasks.withType(JavaCompile) {
-    options.encoding = "UTF-8"
-}
-
-
 uploadArchives {
     repositories.mavenDeployer {
         repository(url: uri('../localGradlePlugin'))//打包存放的位置，这里存放在Module的同级位置
