@@ -6,12 +6,12 @@ buildscript {
         google()
         jcenter()
         maven {
-            url uri("/localGradlePlugin")
+            url uri("localGradlePlugin")
         }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
-        classpath "com.caifu.test:testjavassist:1.0.0"
+        classpath "com.caifu.test:javassist:1.0.0"
     }
 }
 
